@@ -1,9 +1,11 @@
 .newsletter {
-    width: 80%
+    width: 600px
 }
-
+.sub__heading {
+    text-align-last: left;
+}
 .sub__form {
-    width: 80%;
+    width: 100%;
 }
 .sub__form form {
     display: inline-flex;
