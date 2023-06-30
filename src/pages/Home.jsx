@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from "../components/helmet/Helmet";
-import Showcase from "../components/Showcase"
+import Showcase from "../components/UI/Showcase"
 
 
 const Home = () => {

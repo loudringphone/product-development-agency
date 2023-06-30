@@ -4,11 +4,35 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import { Slide } from 'react-toastify';
+
+const toastContainerStyle = {
+  width: window.innerWidth > 600 ? "auto" : "100%",
+};
+const toastContainerPosition = window.innerWidth <= 600 ? "bottom-center" : "top-center";
+
+window.addEventListener("resize", () => {
+  toastContainerStyle.width = window.innerWidth > 600 ? "auto" : "100%";
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ToastContainer
+        style={toastContainerStyle}
+        bodyClassName="toastBody" 
+        position={toastContainerPosition}
+        hideProgressBar={true}
+        autoClose={3500}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnHover
+        theme="light"
+        transition={Slide}
+        />
       <App />
     </BrowserRouter>
   </React.StrictMode>
