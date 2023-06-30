@@ -1,10 +1,15 @@
-import Showcase from './components/Showcase'
+import Header from './components/header/Header';
+import Routers from './routers/Routers'
+
 
 
 function App() {
   return (
     <div className="App">
-      <Showcase />
+      <Header />
+      <main>
+          <Routers />
+      </main>
     </div>
   );
 }

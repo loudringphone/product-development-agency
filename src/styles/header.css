@@ -1,0 +1,253 @@
+header.header {
+    padding-top: 15px;
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 1px 4px #7d7d7d1c;
+    transition: all 0.2s;
+    overflow: visible;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+div.logo {
+    width: 200px;
+}
+
+a.logo:hover {
+    color: inherit !important;
+}
+.fav_icon {
+    margin-right: 10px;
+}
+div.nav_wrapper {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 15px;
+}
+div.logo {
+    display: inline-flex;
+    gap: 8px;
+}
+header div.logo > img {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+div.logo > h3 {
+    align-self: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.account-links {
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    font-size: smaller;
+    align-items: flex-start;
+}
+.account-links span {
+    font-weight: 600;
+    font-size: medium;
+
+}
+
+li.nav_item {
+    list-style: none;
+    margin-left: 15px;
+}
+
+ul#nav {
+    margin-top: 3px;
+}
+
+div.mobile_menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav_active {
+    font-weight: 750;
+}
+
+#nav {
+    transition: all 0.2s;
+
+}
+
+.mobile_nav {
+    display: none;
+    height: 100vh;
+    overflow: hidden;
+    width: 0px;
+    transition: width 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+    padding-right: 15px;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 6px #0000001c;
+}
+.mobile_nav > div {
+    border-right: 0.1px solid white;
+    box-shadow: inset -6px 0 6px -6px rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    padding-right: 40px;
+}
+
+.mobile_nav ul.menu {
+    display: inline-flex;
+    width: 280px;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 20px;
+    justify-content: end;
+}
+
+.mobile_nav ul.quick_links {
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: left;
+    text-align-last: left;
+    width:max
+}
+
+.mobile_nav ul.quick_links > li {
+    text-align: left;
+    font-size: larger;
+    width: max-content;
+}
+
+.close_icon {
+    cursor: pointer;
+}
+.close_icon:hover {
+    color: red;
+}
+
+.mobile-nav-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1500%;
+    z-index: 200;
+    opacity: 1;
+    background-color: #00000026;
+    transition: opacity .35s cubic-bezier(.1,.1,0,1);
+}
+header a {
+    text-decoration: none;
+    color: initial;
+}
+.mobile_nav a {
+    text-decoration: none;
+    color: initial;
+}
+
+@media (max-width: 1020px) {
+    .account-links {
+        align-items: center;
+        margin: 0;
+        flex-direction: row;
+        gap: 10px;
+        font-size: medium;
+        margin-right: 20px;
+        line-height: 1.2;
+    }
+    .account-links span {
+        width:70px;
+        text-align: left;
+    }
+    .quick_links li {
+        margin: 0;
+        padding: 0;
+    }
+    header.header  {
+        height: 120px !important;
+    }
+    .search_box {
+        display: none;
+    }
+    .mobile_search_box {
+        display: block;
+    }
+    .navigation > .nav_icons {
+        width: 40px;
+    }
+    
+    .mobile_nav .nav_icons {
+        height: 30px;
+        text-align-last: left;
+    }
+    .navigation {
+        margin-right: 0;
+    }
+    div.logo {
+        width: 170px;
+        white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 330px) {
+    .account-links {
+        align-items: flex-end;
+    }
+    .mobile_nav > div {
+        padding-right: 10px;
+    }
+    .mobile_nav ul.menu {
+        width: 200px;
+    }
+    div.nav_wrapper .navigation {
+    width: max-content;
+    margin: 0;
+   }
+    .mobile_nav div.nav_icons {
+        width: 150px;
+        text-align: right;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 35px;
+        align-items: flex-start;
+
+    }
+    span.fav_icon {
+        margin-left: 0 !important;
+    }
+    .mobile_nav .user_icon {
+        margin-right: 0px;
+    }
+    div.nav_wrapper {
+        align-items: center;
+    }
+    div.logo {
+        width: 150px;
+        white-space: nowrap;
+    }
+    div.logo > img {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    div.logo > h3 {
+        font-size: larger;
+    }
+    div.mobile_menu {
+        margin-right: 0;
+    }
+    
+}
