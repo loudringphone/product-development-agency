@@ -1,0 +1,32 @@
+.sub__form {
+    width: 80%;
+}
+.sub__form form {
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+}
+.form__email, .subscribing {
+    height: 35px;
+    width: 100%;
+    font-size: large;
+    
+}
+div.form__email, div.subscribing {
+    position: absolute;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+}
+div.subscribing {
+    background-color: lightgrey;
+}
+div.form__email {
+    background-color: red;
+    color: white;
+}
+.sub__error {
+    color: red;
+}

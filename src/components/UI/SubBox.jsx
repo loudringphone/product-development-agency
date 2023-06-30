@@ -3,9 +3,13 @@ import { db } from "../firebase_setup/firebase"
 import { setDoc, doc } from "firebase/firestore"
 import { toast } from "react-toastify"
 
+import '../../styles/subbox.css'
 
 const SubBox = (props) => {
-    const [loading, setLoading] = useState(false)
+    const [subscribedDisplay, setSubscribedDisplay] = useState({display: "none"})
+    const [loadingDisplay, setLoadingDisplay] = useState({display: "none"})
+    const [errorDisplay, setErrorDisplay] = useState({display: "none"})
+
 
     const [email, setEmail] = useState("")
     const handleEmailInput = (e) => {
@@ -13,26 +17,40 @@ const SubBox = (props) => {
       }
       const subscribe = async(e) => {
         e.preventDefault();
-        setLoading(true)
+        setErrorDisplay({display: "none"})
+        setLoadingDisplay({display: "flex"})
         try {
           await setDoc(doc(db, "subscriptions", email), {
               email: email,
             })
-          setLoading(false)
-          toast.success("Welcome to the party!", {autoClose: 1500})
+            setTimeout(() => {
+                setLoadingDisplay({display: "none"})
+                setSubscribedDisplay({display: "flex"})
+                toast.success("Welcome aboard!", {autoClose: 1500})
+            }, 1000);
         } catch (error) {
           console.log(error.code)
-          setLoading(false)
+          setLoadingDisplay({display: "none"})
+          setErrorDisplay({display: "flex"})
         }
       }
 
     return (
-        <div className='sub__form'>
-            <form autoComplete='off' onSubmit={subscribe} action="/" className="form">
-                <label htmlFor="Email" className="form__label" ></label>
-                <input autoComplete="none" type="email" className="form__email" name="Email" id="Email" onInput={handleEmailInput} />
-                <button className="form__submit">Submit</button>
-            </form>
+        <div className="newsletter">
+            <div className="sub__heading">
+                <h2>Stay in the loop</h2>
+                <p>Subscribe to our newsletter to receive updates and insights </p>
+            </div>
+            <div className='sub__form'>
+                <form autoComplete='off' onSubmit={subscribe} action="/" className="form">
+                    <label htmlFor="Email" className="form__label" ></label>
+                    <input autoComplete="none" type="email" className="form__email" name="Email" id="Email" onInput={handleEmailInput} />
+                    <div className="subscribing" style={loadingDisplay}>Subscribing...</div>
+                    <div className="form__email" style={subscribedDisplay}>Welcome aboard!</div>
+                    <button className="form__submit">Submit</button>
+                </form>
+                <div className="sub__error" style={errorDisplay}>There seems to have been an error - please try again.</div>
+            </div>
         </div>
     )
 }
