@@ -1,0 +1,10 @@
+.box {
+    height: 250px;
+    width: 95% !important;
+    margin: 0 10px 0 10px;
+    background-color: aquamarine;
+}
+#showcase {
+    margin-top: 10%;
+
+}
