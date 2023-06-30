@@ -1,10 +1,20 @@
 .box {
     height: 250px;
-    width: 95% !important;
-    margin: 0 10px 0 10px;
-    background-color: aquamarine;
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: aqua;
+}
+.box img {
+    flex-shrink: 0;
+    max-width: 100%;
+    min-height: 100%; /* Center the image within the div */
+}
+.box h4 {
+    margin: 0;
 }
 #showcase {
     margin-top: 10%;
-
 }
