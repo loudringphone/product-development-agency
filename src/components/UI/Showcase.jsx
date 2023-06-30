@@ -26,10 +26,10 @@ useEffect(()=>{
 
 useEffect(() => {
   const handleResize = () => {
-    if (window.innerWidth <= 1100) {
-      setSlides(3);
-    } else if (window.innerWidth <= 800) {
+    if (window.innerWidth <= 800) {
       setSlides(2);
+    } else if (window.innerWidth <= 1100) {
+      setSlides(3);
     } else {
       setSlides(4);
     }
