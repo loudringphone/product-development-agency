@@ -1,5 +1,11 @@
 .newsletter {
-    width: 600px
+    max-width: 600px;
+    margin-top: 5%;
+    padding: 0 10px 0 10px;
+}
+.newsletter p {
+    text-align: left;
+    margin-bottom: 0.5rem;
 }
 .sub__heading {
     text-align-last: left;

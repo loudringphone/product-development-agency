@@ -30,7 +30,7 @@ const Home = () => {
         <div className='content'>
             <Helmet title={"Home"}>
                 <ScrollText />
-                <Showcase items={people}/>
+                <Showcase rtl={false} items={people}/>
             </Helmet>
         </div>
     )

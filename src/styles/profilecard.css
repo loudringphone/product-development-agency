@@ -1,9 +1,49 @@
-.profile__card {
-    width: 450px;
+.profile__card a {
     display: flex;
-    place-content: center;
+    place-content: flex-start;
+    gap: 20px;
+    width: 450px;
+}
+
+.profile__card  h2 {
+    margin-bottom: 0.5rem;
 }
 
 .profile__card img {
-    
+    height: 200px;
+    width: 200px;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 1350px) {
+    .profile__card a {
+        width: 400px;
+    }
+}
+@media (max-width: 1200px) {
+    .profile__card a {
+        width: 650px;
+    }
+    .profile__card  h2 {
+        margin-bottom: 1.25rem;
+    }
+}
+@media (max-width: 950px) {
+    .profile__card a {
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    .profile__card p {
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    .profile__card a {
+        flex-direction: column;
+        align-items: center;
+    }
 }

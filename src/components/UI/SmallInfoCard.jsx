@@ -10,9 +10,8 @@ const SmallInfoCard = (props) => {
             <img src={info.image && info.image[0]?.downloadURL} alt={info.name} />
             </div>
             <div className="smallinfo__right">
-                <h2>{info.name}</h2>
-                <h4>{info.title}</h4>
-                <p>edsahjkdsakmxas</p>
+                <h2>{info.name}..</h2>
+                <p>{info.description}</p>
             </div>
         </div>
     )

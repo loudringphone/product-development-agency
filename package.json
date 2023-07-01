@@ -7,6 +7,7 @@
     "@firebase/app": "^0.9.13",
     "@firebase/firestore": "^3.13.0",
     "@firebase/storage": "^0.11.2",
+    "@react-google-maps/api": "^2.18.1",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

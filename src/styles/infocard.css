@@ -1,25 +1,109 @@
+.person__details {
+    width: 80%;
+}
 .biginfo__card {
     height: 550px;
     display: flex;
-    place-content: center;
+    position: relative;
+}
+.biginfo__right h2, .biginfo__right h1, .biginfo__right p {
+    background-color: aqua;
+    color: black; 
+    max-width: fit-content;
+    padding: 3px 5px 3px 5px;
 }
 .biginfo__card img {
     height: 100%;
     opacity: 0.7;
 }
+.biginfo__left {
+    position: absolute;
+    height: 100%;
+}
 .biginfo__right {
-    position: relative;
-    left: -8%; /* Adjust the value to move the paragraph up or down */
+    position: absolute;
+    right: 5%;
+    width: 50%;
     padding: 10px;
     text-align: left;
 }
 .biginfo__right p {
     margin: 0;
     font-size: large;
-    margin-left: 25%;
+    margin-left: 25px;
     margin-top: 15%;
 }
 
+.content > h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.project__details {
+    width: 80%;
+}
 .smallinfo__card {
-    height: 400px;
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+    display: flex;
+    place-content: center;
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.smallinfo__card img {
+    height: 100%;
+    opacity: 0.7;
+}
+.smallinfo__left {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+}
+.smallinfo__right {
+    width: 100%;
+    position: absolute;
+    left: -50%;
+    padding: 10px;
+    text-align: left;
+}
+.smallinfo__right p {
+    margin: 0;
+    font-size: large;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+.smallinfo__card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.smallinfo__card:nth-child(even) > .smallinfo__left {
+    left: -60%;
+}
+.smallinfo__card:nth-child(even) > .smallinfo__right {
+    left: 50%;
+}
+.smallinfo__right h2, .smallinfo__right p {
+    background-color: violet;
+    color: black; 
+    max-width: fit-content;
+    padding: 3px 5px 3px 5px;
+}
+
+@media (max-width: 1000px) {
+    .biginfo__card {
+        width: 550px;
+
+    }
+    .biginfo__right {
+        position: relative;
+        left: 2%;
+        bottom: -45%;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    
+
 }

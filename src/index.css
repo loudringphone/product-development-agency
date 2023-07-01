@@ -29,6 +29,7 @@ footer {
 
 h1, h2, h3, h4, p {
   margin: 0;
+  text-align: left;
 }
 
 .App {
@@ -38,6 +39,14 @@ h1, h2, h3, h4, p {
   min-height: 100vh;
 }
 .content {
+  padding-top: 50px;
+  padding-bottom: 50px;
   min-height: 70vh;
+  width: 80%;
+  place-self: center;
 }
-
+@media (max-width: 600px) {
+  .content {
+    width: 90%; 
+  }
+}

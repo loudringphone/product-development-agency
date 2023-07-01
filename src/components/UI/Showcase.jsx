@@ -5,16 +5,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../styles/showcase.css'
 
-import { collection, query, getDocs, Timestamp } from "firebase/firestore";
-import {db} from '../../firebase_setup/firebase';
-
 
 const Showcase = (props) => {
   const [slides, setSlides] = useState(4);
-
+  const {pathname} = useLocation()
+  const [loading, setLoading] = useState(true);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const items = props.items
+  useEffect(() => {
+    if (pathname && items) {
+      setLoading(false)
+    }
+  }, [pathname])
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 800) {
+      if (window.innerWidth <= 490) {
+        setSlides(1);
+      } else if (window.innerWidth <= 800) {
         setSlides(2);
       } else if (window.innerWidth <= 1100) {
         setSlides(3);
@@ -24,46 +31,62 @@ const Showcase = (props) => {
     };
     window.addEventListener('resize', handleResize);
   }, []);
+  useEffect(() => {
+    if (windowWidth <= 490) {
+      setSlides(1);
+    } else if (windowWidth <= 800) {
+      setSlides(2);
+    } else if (windowWidth <= 1100) {
+      setSlides(3);
+    } else {
+      setSlides(4);
+    }
+  }, [windowWidth])
 
   const settings = {
     dots: false,
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 4000,
-    speed: 5000,
+    autoplaySpeed: 1000,
+    speed: 7500,
     slidesToShow: slides,
-    slidesToScroll: 3
+    slidesToScroll: slides,
+    rtl: props.rtl,
   };
-
+ 
+  if (loading) {
+    return null; // or show a loading indicator
+  }
   return (
     <div id="showcase">
       <Slider {...settings}>
         {
-          props.items?.map((item, i) => (
+          items && items.map((item, i) => (
             <div  key={i} className="box">
-              <Link to={item.url}>
+              <Link to={pathname === '/' || pathname === '/home' ? `people/${item.name.replace(' ','').toLowerCase()}` : item.url}>
                 <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
-              </Link>
+</Link>
               <h4>{item.name}</h4>
             </div>
             ))
         }
         {
-          props.items?.map((item, i) => (
-            <div  key={i} className="box">
-              <Link to={item.url}>
+          items && items.map((item, i) => (
+            <div key={i} className="box">
+              <Link to={pathname === '/' || pathname === '/home' ? `people/${item.name.replace(' ','').toLowerCase()}` : item.url}>
                 <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
-              </Link>
+</Link>
               <h4>{item.name}</h4>
             </div>
             ))
         }
         
-       
+      
       </Slider>
     </div>
   );
+  
 };
 
 export default Showcase;

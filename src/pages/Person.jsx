@@ -57,26 +57,30 @@ const Person = () => {
         if (loading) {
           return (
             <Helmet title="Fetching the person information...">
-            <div className="personDetails" style={{display: 'flex',
-              alignItems: 'center'}}>
-              <p className='person-not-found'>Fetching the person information...</p>
+            <div className="content">
+              <div className="personDetails" style={{display: 'flex',
+                alignItems: 'center'}}>
+                <p className='person-not-found'>Fetching the person information...</p>
+              </div>
             </div>
             </Helmet>)
         }
     
         return (
           <Helmet title={person.name}>
-          <div className="person__details">
-            <BigInfoCard info={person}/>
+          <div className="content">
+            <div className="person__details">
+              <BigInfoCard info={person}/>
+            </div>
+
+            <h2>Take a look at my work..</h2>
+            {
+            projects?.map((project, i) => (
+                <SmallInfoCard key={i} info={project}/>
+              ))
+            }
+
           </div>
-
-          {
-          projects?.map((project, i) => (
-            <SmallInfoCard key={i} info={project}/>
-            ))
-          }
-
-
 
 
           </Helmet>

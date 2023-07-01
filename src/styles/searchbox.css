@@ -6,10 +6,8 @@
 }
 
 .search_box {
-    margin-left: 20px;
     width: 70%;
     height: 35px;
-    margin-right: auto;
 }
 .search_box input {
     width: calc(100% - 50px);

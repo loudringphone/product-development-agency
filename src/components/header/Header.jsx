@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MenuLineIcon from 'remixicon-react/MenuLineIcon';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
+import HomeLineIcon from 'remixicon-react/HomeLineIcon';
+
 
 import SearchBox from "../UI/SearchBox";
 
@@ -45,7 +47,7 @@ const Header = () => {
         if (window.innerWidth <= 1020) {
             setIsMobile(true)
             setMobileMenuDisplay("inline");
-            setHeaderStyle({height: '120px'});
+            setHeaderStyle({height: '100px'});
             setIsNavVisible(false);
             
         } else {
@@ -137,30 +139,10 @@ const Header = () => {
                                 </span>
                             </div>
                             <NavLink className="logo" to='/'>
-                                <div className="logo">
-                                    <h3>Agency</h3>
-                                </div>
+                                    <h3>One Agency</h3>
                             </NavLink>
                             <SearchBox onClick={handleClick}/>
 
-                            <div className="navigation" >
-                                { !isMobile ? (
-                                    <div className="nav_icons" >
-                                    
-                                    
-                                     
-                                     
-
-                                    </div>
-                                ):(
-                                    <div className="nav_icons" >
-                                        
-                                    </div>
-                                )}
-                                   
-                                    
-                                
-                            </div>
                         </div>
 
 
@@ -183,13 +165,15 @@ const Header = () => {
                                 ))
                             }
                         </ul>
-
             </header>
             <div className="mobile_nav"  style={mobileNavStyle}>
                                 <div>
                                     <div className="navigation" style={navigationStyle}>
                                         <ul className="menu">
-                                           
+                                        
+                                        <span className="home_icon" onClick={handleClose}><Link to='/'><HomeLineIcon size={30} /></Link>
+                                            </span>
+                                            
                                             <span className="close_icon" onClick={handleClose}><CloseLineIcon size={30} />
                                             </span>
                                         </ul>

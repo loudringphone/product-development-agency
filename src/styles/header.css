@@ -23,7 +23,9 @@ header.header {
 div.logo {
     width: 200px;
 }
-
+a.logo {
+    margin-right: auto;
+}
 a.logo:hover {
     color: inherit !important;
 }
@@ -35,6 +37,8 @@ div.nav_wrapper {
     justify-content: space-between;
     width: 95%;
     margin-bottom: 15px;
+    align-self: center;
+    font-size: x-large;
 }
 div.logo {
     display: inline-flex;
@@ -72,6 +76,9 @@ li.nav_item {
 
 ul#nav {
     margin-top: 3px;
+    justify-content: center;
+    justify-content: flex-end;
+    width: 95%;
 }
 
 div.mobile_menu {
@@ -121,21 +128,23 @@ div.mobile_menu span {
     justify-content: space-between;
     padding: 0;
     padding-top: 20px;
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .mobile_nav ul.quick_links {
+    margin-top: 0;
     flex-direction: column;
+    list-style-type: none;
     padding-left: 0;
     justify-content: left;
     text-align-last: left;
-    width:max
 }
 
 .mobile_nav ul.quick_links > li {
     text-align: left;
     font-size: larger;
     width: max-content;
+    margin-bottom: 15px;
 }
 
 .close_icon {
@@ -187,7 +196,7 @@ header a {
         padding: 0;
     }
     header.header  {
-        height: 120px !important;
+        height: 85px !important;
     }
     .search_box {
         display: none;

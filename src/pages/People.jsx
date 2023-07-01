@@ -5,6 +5,8 @@ import {db} from "../firebase_setup/firebase"
 
 import ProfileCard from "../components/UI/ProfileCard"
 
+import '../styles/people.css'
+
 const People = () => {
     const [people, setPeople] = useState([]);
     const fetchPeople = async () => {
@@ -25,15 +27,19 @@ const People = () => {
     }, [])
 
     return (
+        <Helmet title={"People"}>
         <div className='content'>
-            <Helmet title={"People"}>
+            <div className='people'>
+
                 {
                     people?.map((person, i) => (
                         <ProfileCard key={i} person={person}/>
                     ))
                 }
-            </Helmet>
+            </div>
         </div>
+        </Helmet>
+
     )
 
 }
