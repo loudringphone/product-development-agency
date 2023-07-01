@@ -75,7 +75,7 @@ useEffect(() => {
         {
           props.items?.map((item, i) => (
             <div  key={i} className="box">
-              <Link to={item.portfolio}>
+              <Link to={item.url}>
                 <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
               </Link>
               <h4>{item.name}</h4>

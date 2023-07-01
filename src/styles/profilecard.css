@@ -1,0 +1,9 @@
+.profile__card {
+    width: 450px;
+    display: flex;
+    place-content: center;
+}
+
+.profile__card img {
+    
+}
