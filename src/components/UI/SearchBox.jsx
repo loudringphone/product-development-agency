@@ -59,7 +59,7 @@ const SearchBox = ({onClick}) => {
     <form onSubmit={handleSearchSubmit} className='search_box'>
       <input
         type="text"
-        placeholder="What are you looking for?"
+        placeholder="Whom are you looking for?"
         value={searchTerm}
         onChange={handleSearch}
         onClick={() => {

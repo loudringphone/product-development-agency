@@ -12,6 +12,7 @@
 .search_box input {
     width: calc(100% - 50px);
     height: 110%;
+    font-size: medium;
     text-align: left;
     padding: 8px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -35,7 +36,7 @@
     width: calc(100% - 60px);
     height: 100%;
     text-align: left;
-    font-size: larger;
+    font-size: large;
     padding: 8px;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
