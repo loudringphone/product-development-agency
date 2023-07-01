@@ -10,9 +10,11 @@ const BigInfoCard = (props) => {
             <img src={info.image && info.image[0]?.downloadURL} alt={info.name} />
             </div>
             <div className="biginfo__right">
-                <h1>{info.name}</h1>
-                <h4>{info.title}</h4>
-                <p>edsahjkdsakmxas</p>
+                <div className="heading">
+                    <h1>{info.name}</h1>
+                    <h2>{info.title}</h2>
+                </div>
+                <p>{info.description}</p>
             </div>
         </div>
     )

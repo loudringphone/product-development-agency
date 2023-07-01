@@ -17,3 +17,8 @@ main {
   text-align: -webkit-center;
 }
 
+h1, h2, h4, p {
+  margin: 0;
+}
+
+

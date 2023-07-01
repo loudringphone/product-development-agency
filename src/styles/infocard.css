@@ -9,9 +9,15 @@
 }
 .biginfo__right {
     position: relative;
-      left: -10%; /* Adjust the value to move the paragraph up or down */
-      padding: 10px;
-      font-size: 16px;
+    left: -8%; /* Adjust the value to move the paragraph up or down */
+    padding: 10px;
+    text-align: left;
+}
+.biginfo__right p {
+    margin: 0;
+    font-size: large;
+    margin-left: 25%;
+    margin-top: 15%;
 }
 
 .smallinfo__card {

@@ -30,8 +30,8 @@ const Showcase = (props) => {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 6000,
-    speed: 6000,
+    autoplaySpeed: 4000,
+    speed: 5000,
     slidesToShow: slides,
     slidesToScroll: 3
   };
