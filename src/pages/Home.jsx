@@ -10,12 +10,12 @@ const Home = () => {
 
     const [people, setPeople] = useState([]);
     const fetchPeople = async () => {
-    const q = query(collection(db, "people"))
-    await getDocs(q)
-    .then((querySnapshot) => {
-        const newData = querySnapshot.docs
-                .map((doc) => ({ ...doc.data(), id: doc.id }))
-        setPeople(newData);})
+        const q = query(collection(db, "people"))
+        await getDocs(q)
+        .then((querySnapshot) => {
+            const newData = querySnapshot.docs
+                    .map((doc) => ({ ...doc.data(), id: doc.id }))
+            setPeople(newData);})
     }
 
     useEffect(()=>{
@@ -29,7 +29,6 @@ const Home = () => {
     return (
         <div>
             <Helmet title={"Home"}>
-                <ScrollText />
                 <Showcase items={people}/>
             </Helmet>
         </div>
