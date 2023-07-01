@@ -52,7 +52,9 @@ useEffect(() => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 3000,
     slidesToShow: slides,
     slidesToScroll: 3
   };
@@ -60,6 +62,16 @@ useEffect(() => {
   return (
     <div id="showcase">
       <Slider {...settings}>
+        {
+          props.items?.map((item, i) => (
+            <div  key={i} className="box">
+              <Link to={item.url}>
+                <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
+              </Link>
+              <h4>{item.name}</h4>
+            </div>
+            ))
+        }
         {
           props.items?.map((item, i) => (
             <div  key={i} className="box">
@@ -71,18 +83,7 @@ useEffect(() => {
             ))
         }
         
-        <div className="box">
-          <h4>1</h4>
-        </div>
-        <div className="box">
-          <h4>2</h4>
-        </div>
-        <div className="box">
-          <h4>3</h4>
-        </div>
-        <div className="box">
-          <h4>4</h4>
-        </div>
+       
       </Slider>
     </div>
   );
