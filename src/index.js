@@ -7,6 +7,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Slide } from 'react-toastify';
+import { Provider } from "react-redux"
+import { store } from './redux/store';
+import 'remixicon/fonts/remixicon.css'
 
 const toastContainerStyle = {
   width: window.innerWidth > 600 ? "auto" : "100%",
@@ -21,6 +24,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Provider store={store}>
       <ToastContainer
         style={toastContainerStyle}
         bodyClassName="toastBody" 
@@ -34,6 +38,7 @@ root.render(
         transition={Slide}
         />
       <App />
+    </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

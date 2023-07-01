@@ -80,6 +80,10 @@ div.mobile_menu {
     margin-right: 20px;
 }
 
+div.mobile_menu span {
+    display: contents
+}
+
 .nav_active {
     font-weight: 750;
 }
@@ -135,6 +139,7 @@ div.mobile_menu {
 }
 
 .close_icon {
+    display: contents;
     cursor: pointer;
 }
 .close_icon:hover {

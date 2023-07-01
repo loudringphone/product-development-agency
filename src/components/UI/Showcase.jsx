@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import '../../styles/showcase.css'
 
 import { collection, query, getDocs, Timestamp } from "firebase/firestore";
-import {db} from '../firebase_setup/firebase';
+import {db} from '../../firebase_setup/firebase';
 
 
 const Showcase = (props) => {
@@ -30,8 +30,8 @@ const Showcase = (props) => {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 3000,
+    autoplaySpeed: 6000,
+    speed: 6000,
     slidesToShow: slides,
     slidesToScroll: 3
   };
