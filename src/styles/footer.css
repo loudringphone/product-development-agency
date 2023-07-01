@@ -26,6 +26,7 @@
    display: inline-block;
    vertical-align: top;
    margin: 0;
+   text-align: left;
 }
 
 .footer-col ul li:not(:last-child){
