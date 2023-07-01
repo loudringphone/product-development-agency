@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
 
 .sentence {
-    max-width: 800px;
+    max-width: 700px;
+    text-align: left;
 }
 
 p, .words {
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
-    font-size: xx-large;
+    font-size: xxx-large;
     text-align: left;
     vertical-align: middle;
+    margin: 10px;
 }
 
 .words {
     display: inline-block;
     font-weight: 600;
     color: rgb(255, 136, 0);
-    max-height: 40px;
+    max-height: 60px;
     overflow: hidden;
     margin: 0;
-    padding: 0 10px;
+    padding-right: 10px;
 }
 
 span {
