@@ -18,12 +18,12 @@ const nav_links = [
         display: 'Approach'
     },
     {
-        path: 'projects',
-        display: 'Projects'
+        path: 'people',
+        display: 'People'
     },
     {
-        path: 'blog',
-        display: 'Blog'
+        path: 'projects',
+        display: 'Projects'
     },
     {
         path: 'contact',
