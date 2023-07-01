@@ -2,15 +2,16 @@ import React, { useState, useEffect } from 'react'
 import { Helmet } from '../components/helmet/Helmet'
 import { useParams } from 'react-router-dom';
 
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, collection, query, where, getDocs } from "firebase/firestore";
 import {db} from "../components/firebase_setup/firebase"
 
 import BigInfoCard from "../components/UI/BigInfoCard"
+import SmallInfoCard from "../components/UI/SmallInfoCard"
 
 const Person = () => {
     const [person, setPerson] = useState([]);
+    const [projects, setProjects] = useState([]);
     let {personId} = useParams()
-   
     const [loading, setLoading] = useState(true);
     const [personFound, setPersonFound] = useState(true);
     useEffect(() => {
@@ -30,6 +31,16 @@ const Person = () => {
           }
         };
         fetchPerson();
+
+        const fetchProjects = async () => {
+            const q = query(collection(db, "projects"), where("creator", "==", personId))
+            await getDocs(q)
+            .then((querySnapshot) => {
+                const newData = querySnapshot.docs
+                        .map((doc) => ({ ...doc.data(), id: doc.id }))
+                setProjects(newData);})
+        }
+        fetchProjects();
       }, [personId]);;
 
       if (!personFound) {
@@ -58,6 +69,16 @@ const Person = () => {
           <div className="person__details">
             <BigInfoCard info={person}/>
           </div>
+
+          {
+          projects?.map((project, i) => (
+            <SmallInfoCard key={i} info={project}/>
+            ))
+          }
+
+
+
+
           </Helmet>
         );
       }

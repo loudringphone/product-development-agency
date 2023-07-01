@@ -11,42 +11,19 @@ import {db} from '../firebase_setup/firebase';
 
 const Showcase = (props) => {
   const [slides, setSlides] = useState(4);
-//   const [projects, setProjects] = useState([]);
-//   const fetchProjects = async () => {
-//     const q = query(collection(db, "projects"))
-//     await getDocs(q)
-//     .then((querySnapshot) => {
-//         const newData = querySnapshot.docs
-//                 .map((doc) => ({ ...doc.data(), id: doc.id }))
-//         setProjects(newData);})
-// }
 
-// useEffect(()=>{
-//   fetchProjects();
-// }, [])
-
-useEffect(() => {
-  const handleResize = () => {
-    if (window.innerWidth <= 800) {
-      setSlides(2);
-    } else if (window.innerWidth <= 1100) {
-      setSlides(3);
-    } else {
-      setSlides(4);
-    }
-  };
-  window.addEventListener('resize', handleResize);
-}, []);
-
-
-
-
-
-
-
-
-
-
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 800) {
+        setSlides(2);
+      } else if (window.innerWidth <= 1100) {
+        setSlides(3);
+      } else {
+        setSlides(4);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+  }, []);
 
   const settings = {
     dots: false,
