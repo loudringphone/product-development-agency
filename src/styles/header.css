@@ -3,6 +3,18 @@ body.scroll-locked {
     touch-action: manipulation;
 }
 
+.header .logo img {
+    max-width: 50px;
+    display: inline-block;
+}
+
+.header .logo h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: xxx-large;
+    display: inline-block;
+}
+
 header.header {
     padding-top: 15px;
     height: 110px;

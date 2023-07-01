@@ -1,0 +1,19 @@
+
+
+.approach-container {
+    font-family: 'Quicksand', sans-serif;
+    max-width: 960px;
+    margin-bottom: 100px;
+}
+
+.approach-container h1 {
+    margin: 10px 1em;
+    font-weight: 300;
+}
+
+.approach-content {
+    width: 60%;
+    margin-left:auto;
+    margin-right: 1em;
+}
+

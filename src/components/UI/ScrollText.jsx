@@ -4,11 +4,13 @@ import '../../styles/scroll.css';
 const ScrollText = () => {
 
     const wordArray = [
-        '   ',
         'websites',
         'experiences',
         'apps',
         'methodologies',
+        'systems',
+        'products', 
+        'services', 
         'systems',
         'websites'
     ]

@@ -3,6 +3,7 @@
 .sentence {
     max-width: 700px;
     text-align: left;
+    margin: 0 0 15em 2em;
 }
 
 .heroPara, .words {
@@ -28,7 +29,7 @@
     display: block;
     height: 100%;
     padding-left: 10px;
-    animation: spin_words 6s infinite;
+    animation: spin_words 10s infinite;
     padding-left: 10px;
 }
 
@@ -36,25 +37,49 @@
     10% {
         transform: translateY(-112%);
     }
-    25% {
+    15% {
         transform: translateY(-100%);
     }
-    35% {
+    25% {
         transform: translateY(-212%);
     }
-    50% {
+    30% {
         transform: translateY(-200%);
     }
-    60% {
+    40% {
         transform: translateY(-312%);
     }
-    75% {
+    45% {
         transform: translateY(-300%);
     }
-    85% {
+    55% {
         transform: translateY(-412%);
     }
-    100% {
+    60% {
         transform: translateY(-400%);
+    }
+    67% {
+        transform: translateY(-512%);
+    }
+    70% {
+        transform: translateY(-500%);
+    }
+    77% {
+        transform: translateY(-612%);
+    }
+    80% {
+        transform: translateY(-600%);
+    }
+    87% {
+        transform: translateY(-712%);
+    }
+    90% {
+        transform: translateY(-700%);
+    }
+    97% {
+        transform: translateY(-812%);
+    }
+    100% {
+        transform: translateY(-800%);
     }
 }

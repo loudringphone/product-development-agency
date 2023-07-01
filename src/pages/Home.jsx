@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from "../components/helmet/Helmet";
 import ScrollText from '../components/UI/ScrollText';
+import Purpose from '../components/UI/PurposeCard';
+import Approach from '../components/UI/Approach';
 import Showcase from "../components/UI/Showcase"
 import { collection, query, getDocs } from "firebase/firestore";
 import {db} from "../firebase_setup/firebase"
@@ -36,6 +38,8 @@ const Home = () => {
         <div className='content'>
             <Helmet title={"Home"}>
                 <ScrollText />
+                <Purpose />
+                <Approach />
                 <Showcase rtl={false} items={people}/>
             </Helmet>
         </div>
