@@ -44,7 +44,7 @@ const SubBox = (props) => {
             <div className='sub__form'>
                 <form autoComplete='off' onSubmit={subscribe} action="/" className="form">
                     <label htmlFor="Email" className="form__label" ></label>
-                    <input autoComplete="none" type="email" className="form__email" name="Email" id="Email" onInput={handleEmailInput} />
+                    <input autoComplete="none" type="email" className="form__email" name="Email" id="Email" onInput={handleEmailInput} placeholder="Enter your email address and subscribe now!"/>
                     <div className="subscribing" style={loadingDisplay}>Subscribing...</div>
                     <div className="form__email" style={subscribedDisplay}>Welcome aboard!</div>
                     <button className="form__submit">Submit</button>
