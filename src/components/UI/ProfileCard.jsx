@@ -6,7 +6,7 @@ const ProfileCard = (props) => {
     const person = props.person
     return (
         <div className="profile__card">
-        <Link to={{ pathname: `${person.name.replace(' ','').toLowerCase()}` }}>
+        <Link to={`/people/${person.name.replace(' ','').toLowerCase()}`}>
 
             <div className="profile_left">
                 <img src={person.image && person.image[0]?.downloadURL} alt={person.name} />

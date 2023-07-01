@@ -23,6 +23,7 @@
     float: right;
     width: 50px;
     height: 110%;
+    cursor: pointer;
 }
 .search_box form {
     height: 100%;
