@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from "../components/helmet/Helmet";
+import ScrollText from '../components/UI/ScrollText';
 import Showcase from "../components/UI/Showcase"
 import { collection, query, getDocs } from "firebase/firestore";
 import {db} from "../components/firebase_setup/firebase"
@@ -28,6 +29,7 @@ const Home = () => {
     return (
         <div>
             <Helmet title={"Home"}>
+                <ScrollText />
                 <Showcase items={people}/>
             </Helmet>
         </div>

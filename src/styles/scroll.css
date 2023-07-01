@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+.sentence {
+    max-width: 800px;
+}
+
+p, .words {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: xx-large;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.words {
+    display: inline-block;
+    font-weight: 600;
+    color: rgb(255, 136, 0);
+    max-height: 40px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 10px;
+}
+
+span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 6s infinite;
+    padding-left: 10px;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-112%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    35% {
+        transform: translateY(-212%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-312%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    85% {
+        transform: translateY(-412%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
