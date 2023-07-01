@@ -11,7 +11,9 @@ const Contact = () => {
         <div className='content'>
             <Helmet title={"Contact Us"}>
                 <div className='headquarter-location'>
-                    <Map />
+                    <div className='map'>
+                        <Map />
+                    </div>
                     <div className='location-right'>
                         <h3>One Agency Ltd</h3>
                         <ul>
