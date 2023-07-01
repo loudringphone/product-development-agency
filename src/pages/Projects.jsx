@@ -20,7 +20,7 @@ const Projects = () => {
     fetchProjects();
     }, [])
     return (
-        <div>
+        <div className='content'>
             <Helmet title={"Projects"}>
                 <Showcase items={projects}/>
             </Helmet>

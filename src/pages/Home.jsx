@@ -27,7 +27,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='content'>
             <Helmet title={"Home"}>
                 <ScrollText />
                 <Showcase items={people}/>

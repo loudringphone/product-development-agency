@@ -6,7 +6,7 @@ import SubBox from "../components/UI/SubBox"
 const Contact = () => {
 
     return (
-        <div>
+        <div className='content'>
             <Helmet title={"Contact Us"}>
                 <SubBox />
             </Helmet>

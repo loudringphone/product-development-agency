@@ -25,7 +25,7 @@ const People = () => {
     }, [])
 
     return (
-        <div>
+        <div className='content'>
             <Helmet title={"People"}>
                 {
                     people?.map((person, i) => (

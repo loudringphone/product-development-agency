@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 code {
@@ -17,8 +22,22 @@ main {
   text-align: -webkit-center;
 }
 
-h1, h2, h4, p {
+footer {
+  margin-top: auto;
+  align-self: flex-end
+}
+
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  min-height: 70vh;
+}
 
