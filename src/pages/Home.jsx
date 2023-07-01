@@ -15,9 +15,15 @@ const Home = () => {
     .then((querySnapshot) => {
         const newData = querySnapshot.docs
                 .map((doc) => ({ ...doc.data(), id: doc.id }))
+        shuffleArray(newData);
         setPeople(newData);})
     }
-
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
     useEffect(()=>{
     fetchPeople();
     }, [])

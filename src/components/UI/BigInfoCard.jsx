@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 
 import '../../styles/infocard.css'
 
@@ -7,7 +8,9 @@ const BigInfoCard = (props) => {
     return (
         <div className="biginfo__card">
             <div className="biginfo__left">
-            <img src={info.image && info.image[0]?.downloadURL} alt={info.name} />
+            <Link to={info.url}>
+                <img src={info.image && info.image[0]?.downloadURL} alt={info.name} />
+            </Link>
             </div>
             <div className="biginfo__right">
                 <div className="heading">

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from '../components/helmet/Helmet'
 import { useParams } from 'react-router-dom';
-
 import { doc, getDoc, collection, query, where, getDocs } from "firebase/firestore";
 import {db} from "../firebase_setup/firebase"
 
@@ -69,10 +68,9 @@ const Person = () => {
         return (
           <Helmet title={person.name}>
           <div className="content">
-            <div className="person__details">
-              <BigInfoCard info={person}/>
-            </div>
-
+              <div className="person__details">
+                <BigInfoCard info={person}/>
+              </div>
             <h2>Take a look at my work..</h2>
             {
             projects?.map((project, i) => (

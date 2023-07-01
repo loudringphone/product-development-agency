@@ -45,7 +45,7 @@ h1, h2, h3, h4, p {
   width: 80%;
   place-self: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .content {
     width: 90%; 
   }

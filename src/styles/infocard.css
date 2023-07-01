@@ -1,5 +1,5 @@
 .person__details {
-    width: 80%;
+    width: 550px
 }
 .biginfo__card {
     height: 550px;
@@ -19,10 +19,11 @@
 .biginfo__left {
     position: absolute;
     height: 100%;
+    left: -20%;
 }
 .biginfo__right {
     position: absolute;
-    right: 5%;
+    right: -20%;
     width: 50%;
     padding: 10px;
     text-align: left;
@@ -54,7 +55,8 @@
 }
 
 .smallinfo__card img {
-    height: 100%;
+    width: 450px;
+    max-height: 100%;
     opacity: 0.7;
 }
 .smallinfo__left {
@@ -79,7 +81,7 @@
     flex-direction: row-reverse;
 }
 .smallinfo__card:nth-child(even) > .smallinfo__left {
-    left: -60%;
+    left: -50%;
 }
 .smallinfo__card:nth-child(even) > .smallinfo__right {
     left: 50%;
@@ -91,19 +93,85 @@
     padding: 3px 5px 3px 5px;
 }
 
-@media (max-width: 1000px) {
-    .biginfo__card {
-        width: 550px;
+@media (max-width: 1050px) {
+    
+    .smallinfo__left {
+        left: 20%;
+    }
+    .smallinfo__right {
+        left: -30%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__left {
+        left: -20%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__right {
+        left: 30%;
+    }
 
+
+}
+@media (max-width: 850px) {
+.smallinfo__card img {
+    width: 400px;
+}
+}
+@media (max-width: 800px) {
+    .biginfo__card {
+        width: 100%;
+    }
+    .biginfo__left {
+        left: 0%
     }
     .biginfo__right {
         position: relative;
-        left: 2%;
+        left: 0%;
         bottom: -45%;
         padding: 10px;
         text-align: left;
     }
-    
-    
-
+}
+@media (max-width: 700px) {
+    .smallinfo__left {
+        left: 10%;
+    }
+    .smallinfo__right {
+        left: -10%;
+        bottom: 5%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__left {
+        left: -10%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__right {
+        left: 10%;
+    }
+}
+@media (max-width: 600px) {
+    .smallinfo__left {
+        left: 0%;
+    }
+    .smallinfo__right {
+        left: -10%;
+        bottom: 5%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__left {
+        left: 0%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__right {
+        left: 10%;
+    }
+}
+@media (max-width: 530px) {
+    .smallinfo__card {
+        width: 300px;
+    }
+    .smallinfo__card img {
+        width: 300px;
+    }
+    .smallinfo__right {
+        left: 0%;
+        bottom: 5%;
+    }
+    .smallinfo__card:nth-child(even) > .smallinfo__right {
+        left: 0%;
+    }
 }
