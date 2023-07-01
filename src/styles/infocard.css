@@ -1,0 +1,9 @@
+.biginfo__card {
+    width: 450px;
+    display: flex;
+    place-content: center;
+}
+
+.biginfo__card img {
+    
+}

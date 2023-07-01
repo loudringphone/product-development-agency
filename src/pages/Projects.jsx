@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Helmet } from "../components/helmet/Helmet";
 import Showcase from "../components/UI/Showcase"
 
-import { collection, query, getDocs, Timestamp } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 import {db} from "../components/firebase_setup/firebase"
 
 const Projects = () => {
