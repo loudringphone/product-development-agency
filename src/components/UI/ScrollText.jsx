@@ -15,13 +15,13 @@ const ScrollText = () => {
 
     return (
         <div className="sentence">
-            <p>We create </p>
+            <p className='heroPara'>We create </p>
             <div className="words">
                 { wordArray.map((word) => {
                     return <span>{ word }</span>
                 })}
             </div>
-            <p> for people with purpose.</p>
+            <p className='heroPara'> for people with purpose.</p>
         </div>
     )
 }

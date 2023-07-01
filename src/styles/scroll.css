@@ -5,7 +5,7 @@
     text-align: left;
 }
 
-p, .words {
+.heroPara, .words {
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
     font-size: xxx-large;
@@ -24,7 +24,7 @@ p, .words {
     padding-right: 10px;
 }
 
-span {
+.sentence span {
     display: block;
     height: 100%;
     padding-left: 10px;
