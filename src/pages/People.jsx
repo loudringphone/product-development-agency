@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Helmet } from "../components/helmet/Helmet";
 import { collection, query, getDocs } from "firebase/firestore";
-import {db} from "../components/firebase_setup/firebase"
+import {db} from "../firebase_setup/firebase"
 
 import ProfileCard from "../components/UI/ProfileCard"
 

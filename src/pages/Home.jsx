@@ -3,7 +3,7 @@ import { Helmet } from "../components/helmet/Helmet";
 import ScrollText from '../components/UI/ScrollText';
 import Showcase from "../components/UI/Showcase"
 import { collection, query, getDocs } from "firebase/firestore";
-import {db} from "../components/firebase_setup/firebase"
+import {db} from "../firebase_setup/firebase"
 
 const Home = () => {
 

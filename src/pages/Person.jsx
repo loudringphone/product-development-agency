@@ -3,7 +3,7 @@ import { Helmet } from '../components/helmet/Helmet'
 import { useParams } from 'react-router-dom';
 
 import { doc, getDoc, collection, query, where, getDocs } from "firebase/firestore";
-import {db} from "../components/firebase_setup/firebase"
+import {db} from "../firebase_setup/firebase"
 
 import BigInfoCard from "../components/UI/BigInfoCard"
 import SmallInfoCard from "../components/UI/SmallInfoCard"

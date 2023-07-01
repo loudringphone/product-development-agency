@@ -1,9 +1,19 @@
 .biginfo__card {
-    width: 450px;
+    height: 550px;
     display: flex;
     place-content: center;
 }
-
 .biginfo__card img {
-    
+    height: 100%;
+    opacity: 0.7;
+}
+.biginfo__right {
+    position: relative;
+      left: -10%; /* Adjust the value to move the paragraph up or down */
+      padding: 10px;
+      font-size: 16px;
+}
+
+.smallinfo__card {
+    height: 400px;
 }

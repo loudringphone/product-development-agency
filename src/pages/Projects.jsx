@@ -3,7 +3,7 @@ import { Helmet } from "../components/helmet/Helmet";
 import Showcase from "../components/UI/Showcase"
 
 import { collection, query, getDocs } from "firebase/firestore";
-import {db} from "../components/firebase_setup/firebase"
+import {db} from "../firebase_setup/firebase"
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);

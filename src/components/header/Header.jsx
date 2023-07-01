@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 import MenuLineIcon from 'remixicon-react/MenuLineIcon';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
+
+import SearchBox from "../UI/SearchBox";
+
 import '../../styles/header.css';
 
 
-
-import '../../styles/header.css';
 
 const nav_links = [
     {
@@ -126,28 +127,27 @@ const Header = () => {
 
     return (
         <>
+
             <div className="mobile-nav-overlay" style={navigationStyle} onClick={handleClose}></div>
             <header className='header' style={headerStyle}>
-               
                         <div className="nav_wrapper">
                             <div className="mobile_menu" style={{ display: mobileMenuDisplay }} onClick={handleOpen}>
                                 <span>
                                     <MenuLineIcon size={30} />
                                 </span>
                             </div>
-                            
-
                             <NavLink className="logo" to='/'>
                                 <div className="logo">
                                     <h3>Agency</h3>
                                 </div>
                             </NavLink>
-                       
+                            <SearchBox onClick={handleClick}/>
+
                             <div className="navigation" >
                                 { !isMobile ? (
                                     <div className="nav_icons" >
                                     
-                                 
+                                    
                                      
                                      
 
@@ -184,7 +184,6 @@ const Header = () => {
                             }
                         </ul>
 
-                       
             </header>
             <div className="mobile_nav"  style={mobileNavStyle}>
                                 <div>
