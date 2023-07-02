@@ -6,7 +6,11 @@
     margin-bottom: 100px;
 }
 
-.approach-container h1 {
+.approach-title {
+    margin-bottom: 2em;
+}
+
+.approach-title h1 {
     margin: 10px 1em;
     font-weight: 300;
 }
@@ -17,3 +21,16 @@
     margin-right: 1em;
 }
 
+.approach-card {
+    display: inline-block;
+    width: 40%;
+    padding: 1em;
+}
+
+.approach-card img {
+    
+}
+
+.approach-card h3 {
+    margin-bottom: px;
+}
