@@ -47,18 +47,18 @@
 }
 .smallinfo__card {
     height: 350px;
-    width: 350px;
+    max-width: 700px;
     justify-content: center;
-    display: flex;
+    display: block;
     place-content: center;
-    position: relative;
+    position:relative;
     margin-bottom: 75px;
 }
 
 .smallinfo__card img {
-    width: 450px;
+    width: 50%;
     max-height: 100%;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .smallinfo__left {
     position: absolute;

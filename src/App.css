@@ -4,10 +4,12 @@
   text-align: center;
   /* display: flex; */
   flex-direction: column;
+  width:100%;
+  
 }
 
 .content {
-  margin: 0 auto;
+  margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
 

@@ -5,6 +5,23 @@
     font-family: 'Quicksand', sans-serif;
     width: 100vw;
     margin-bottom: 5em;
+    padding-top: 1em;
+}
+
+
+.works-title {
+    margin: 4em auto;
+}
+
+.works-title h1 {
+    margin: 20px 1em;
+    font-weight: 300;
+}
+
+.works-content {
+    width: 60%;
+    margin-left:auto;
+    margin-right: 1em;
 }
 
 .works-card {
