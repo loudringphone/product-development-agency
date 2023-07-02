@@ -41,7 +41,7 @@ const SearchBox = ({onClick}) => {
     }
   }, [location])
 
-  const [historyStyle, setHistoryStyle] = useState({display: 'none'});
+  const [historyStyle, setHistoryStyle] = useState({display: 'flex'});
   const handleClick = () => {
     if (searchHistory && searchHistory.length > 0) {
         setHistoryStyle({display: 'flex'});
