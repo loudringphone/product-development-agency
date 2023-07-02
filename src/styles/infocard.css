@@ -13,6 +13,7 @@
     padding: 3px 5px 3px 5px;
 }
 .biginfo__card img {
+    width: 100%;
     height: 100%;
     opacity: 0.7;
 }
@@ -131,6 +132,29 @@
     }
 }
 @media (max-width: 700px) {
+    .person__details {
+        width: 90%;
+    }
+    .biginfo__card {
+        flex-direction: column;
+        height: 100%;
+    }
+    .biginfo__left {
+        position: relative;
+    }
+    .biginfo__right {
+        position: relative;
+        width: 80%;
+    }
+    .biginfo__right p {
+        margin: 0;
+        font-size: large;
+        margin-left: 25px;
+        margin-top: 20px;
+        background-color: aqua;
+    }
+
+   
     .smallinfo__left {
         left: 10%;
     }

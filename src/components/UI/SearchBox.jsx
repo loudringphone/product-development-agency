@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addSearchQuery, clearSearchHistory } from '../../redux/slices/searchHistorySlice';
+import { motion } from "framer-motion";
 import '../../styles/searchbox.css'
 
 const SearchBox = ({onClick}) => {
@@ -56,7 +57,7 @@ const SearchBox = ({onClick}) => {
   }, [searchHistory]);
 
   return (
-    <form onSubmit={handleSearchSubmit} className='search_box'>
+    <form onSubmit={handleSearchSubmit}>
       <input
         type="text"
         placeholder="Whom are you looking for?"
@@ -81,9 +82,9 @@ const SearchBox = ({onClick}) => {
         }}
         ref={searchInputRef}
       />
-      <button type="submit">
+      <motion.button type="submit" whileHover={{scale:1.2}}>
         <i className="ri-search-line"></i>
-      </button>
+      </motion.button>
       {searchHistory && searchHistory.length > 0 && (
         <div className="search-history" style={historyStyle}>
           <div className='history-list'>

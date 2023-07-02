@@ -129,7 +129,6 @@ const Header = () => {
 
     return (
         <>
-
             <div className="mobile-nav-overlay" style={navigationStyle} onClick={handleClose}></div>
             <header className='header' style={headerStyle}>
                         <div className="nav_wrapper">
@@ -140,14 +139,10 @@ const Header = () => {
                             </div>
                             <NavLink className="logo" to='/'>
                                     <img src="/ctlogo.png" alt="" />
-                                    <h3>The Collective</h3>
+                                    <h3>ONE</h3>
                             </NavLink>
-                            <SearchBox onClick={handleClick}/>
-
+                        <div className="search_box"> <SearchBox onClick={handleClick}/></div>
                         </div>
-
-
-
 
                         <ul id='nav' style={{ display: isNavVisible ? 'flex' : 'none',
                     opacity: isNavVisible ? '1' : '0' }}>
@@ -168,6 +163,7 @@ const Header = () => {
                         </ul>
             </header>
             <div className="mobile_nav"  style={mobileNavStyle}>
+                
                                 <div>
                                     <div className="navigation" style={navigationStyle}>
                                         <ul className="menu">
@@ -191,9 +187,12 @@ const Header = () => {
                                             {item.display}
                                         </NavLink>
                                     </li>
+                                    
                                             ))
                                             }
+                                            <li><div className="mobile_search_box"> <SearchBox onClick={handleClick}/></div></li>
             </ul>
+
                                     </div>
                                 </div>
                             </div>
