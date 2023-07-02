@@ -207,7 +207,7 @@ header a {
     a.logo {
         margin-left: auto;
         width: 80%;
-        place-content: center
+        justify-content: right;
     }
     .account-links {
         align-items: center;
