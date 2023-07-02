@@ -2,8 +2,11 @@
 
 .approach-container {
     font-family: 'Quicksand', sans-serif;
+    width:100%;
     max-width: 960px;
+    margin: 0 auto;
     margin-bottom: 100px;
+    
 }
 
 .approach-title {
@@ -21,16 +24,24 @@
     margin-right: 1em;
 }
 
+.approach-cards {
+    align-items: center;
+    vertical-align: middle;
+}
+
 .approach-card {
     display: inline-block;
     width: 40%;
+    min-height: 400px;
     padding: 1em;
+    vertical-align: middle;
 }
 
-.approach-card img {
-    
+.approach-image {
+    min-height:130px;
+    margin: 1em;
 }
 
 .approach-card h3 {
-    margin-bottom: px;
+    margin-bottom: 10px;
 }
