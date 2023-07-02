@@ -15,7 +15,7 @@ const Contact = () => {
                         <Map />
                     </div>
                     <div className='location-right'>
-                        <h3>One Agency Ltd</h3>
+                        <h3>Spark Studio</h3>
                         <ul>
                         <li>1 Market St</li>
                         <li>Sydney, NSW</li>
