@@ -3,6 +3,7 @@ import { Helmet } from "../components/helmet/Helmet";
 import ScrollText from '../components/UI/ScrollText';
 import Purpose from '../components/UI/PurposeCard';
 import Approach from '../components/UI/Approach';
+import Works from '../components/UI/Works';
 import Showcase from "../components/UI/Showcase"
 import { collection, query, getDocs } from "firebase/firestore";
 import {db} from "../firebase_setup/firebase"
@@ -40,6 +41,7 @@ const Home = () => {
                 <ScrollText />
                 <Purpose />
                 <Approach />
+                <Works />
                 <Showcase rtl={false} items={people}/>
             </Helmet>
         </div>
