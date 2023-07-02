@@ -1,3 +1,7 @@
+a.logo {
+    /* margin-left: auto; */
+}
+
 body.scroll-locked {
     overflow: hidden;
     touch-action: manipulation;
@@ -190,6 +194,9 @@ header a {
 }
 
 @media (max-width: 1020px) {
+    a.logo {
+        margin-left: auto;
+    }
     .account-links {
         align-items: center;
         margin: 0;
