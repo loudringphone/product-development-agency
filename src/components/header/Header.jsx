@@ -13,10 +13,6 @@ import '../../styles/header.css';
 
 const nav_links = [
     {
-        path: 'purpose',
-        display: 'Purpose'
-    },
-    {
         path: 'people',
         display: 'People'
     },
