@@ -17,10 +17,6 @@ const nav_links = [
         display: 'Purpose'
     },
     {
-        path: 'approach',
-        display: 'Approach'
-    },
-    {
         path: 'people',
         display: 'People'
     },
