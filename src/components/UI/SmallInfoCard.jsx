@@ -14,7 +14,12 @@ const SmallInfoCard = (props) => {
             </div>
             <div className="smallinfo__right">
                 <h2>{info.name}</h2>
-                <h3>{info.type}</h3>
+                {info.type?
+                    <h3>{info.type}</h3>
+                    :
+                    <></>
+                 }
+                
                 <p>{info.description}</p>
             </div>
         </div>
