@@ -16,7 +16,7 @@ const Footer = () => {
                         <p>Sydney, NSW</p>
                         <p>2000</p>
                         <p>02 9855 5555</p>
-                        <p>info@oneagency.com.au</p>
+                        <p>letsconnect@sparkstudio.com</p>
                     </div>
                 </div>
             </div>

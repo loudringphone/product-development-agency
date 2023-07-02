@@ -131,7 +131,7 @@ const Header = () => {
                             </div>
                             <NavLink className="logo" to='/'>
                                     <img src="/ctlogo.png" alt="" />
-                                    <h3>ONE</h3>
+                                    <h3>SPARK</h3>
                             </NavLink>
                         <div className="search_box"> <SearchBox onClick={handleClick}/></div>
                         </div>
