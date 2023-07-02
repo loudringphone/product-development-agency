@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, p {
   padding-bottom: 50px;
   min-height: 70vh;
   margin: auto;
-  width: 100vw;
+  width: 95vw;
   place-self: center;
 }
 @media (max-width: 1000px) {
