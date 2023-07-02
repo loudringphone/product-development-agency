@@ -56,9 +56,9 @@ const Result = () => {
             { people?.length > 0 ?
                 <div className='content'>
                     { people?.length == 1 ?
-                        <h2 className='found'>1 person found for your search of "{searchQuery}"!</h2>
+                        <h3 className='found'>1 person found for your search of "{searchQuery}"!</h3>
                     :
-                        <h2 className='found'>{people?.length} people found for your search of "{searchQuery}"!</h2>
+                        <h3 className='found'>{people?.length} people found for your search of "{searchQuery}"!</h3>
                     }
                     <div className='people'>
                         {
@@ -71,7 +71,7 @@ const Result = () => {
 
             :
                 <div className='content'>
-                    <h2 className='nofound'>No related people found.</h2>
+                    <h3 className='nofound'>No related people found.</h3>
                 </div>
 
             }

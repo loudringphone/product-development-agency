@@ -5,8 +5,10 @@
     width: 85%;
     gap: 35px;
 }
-.nofound, .found {
-    text-align-last: center;
+h3.nofound, h3.found {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: larger;
 }
 
 @media (max-width: 1200px) {
