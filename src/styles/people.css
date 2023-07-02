@@ -5,6 +5,9 @@
     width: 85%;
     gap: 35px;
 }
+.nofound, .found {
+    text-align-last: center;
+}
 
 @media (max-width: 1200px) {
 .people {

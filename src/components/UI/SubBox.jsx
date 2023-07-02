@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { db } from "../../firebase_setup/firebase"
 import { setDoc, doc } from "firebase/firestore"
 import { toast } from "react-toastify"
+import { motion } from "framer-motion";
 
 import '../../styles/subbox.css'
 
@@ -18,14 +19,14 @@ const SubBox = (props) => {
       const subscribe = async(e) => {
         e.preventDefault();
         setErrorDisplay({display: "none"})
-        setLoadingDisplay({display: "flex"})
+        setLoadingDisplay({display: "flex", zIndex:99})
         try {
           await setDoc(doc(db, "subscriptions", email), {
               email: email,
             })
             setTimeout(() => {
                 setLoadingDisplay({display: "none"})
-                setSubscribedDisplay({display: "flex"})
+                setSubscribedDisplay({display: "flex", zIndex:99})
                 toast.success("Welcome aboard!", {autoClose: 1500})
             }, 1000);
         } catch (error) {
@@ -47,7 +48,7 @@ const SubBox = (props) => {
                     <input autoComplete="none" type="email" className="form__email" name="Email" id="Email" onInput={handleEmailInput} placeholder="Enter your email address and subscribe now!"/>
                     <div className="subscribing" style={loadingDisplay}>Subscribing...</div>
                     <div className="form__email" style={subscribedDisplay}>Welcome aboard!</div>
-                    <button className="form__submit">Submit</button>
+                    <motion.button className="form__submit" whileHover={{scale:1.1}}>Submit</motion.button>
                 </form>
                 <div className="sub__error" style={errorDisplay}>There seems to have been an error - please try again.</div>
             </div>

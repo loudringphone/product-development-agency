@@ -50,17 +50,31 @@ const Result = () => {
    
         return (
             <Helmet title={`Results for '${searchQuery}'`}>
-            <div className='content'>
-                <div className='people'>
+           
+                
                     
-                    { people?.length > 0 ?
-                        people?.map((person, i) => (
-                            <ProfileCard key={i} person={person}/>
-                        )) :
-                        <div>No related people found.</div>
+            { people?.length > 0 ?
+                <div className='content'>
+                    { people?.length == 1 ?
+                        <h2 className='found'>1 person found for your search of "{searchQuery}"!</h2>
+                    :
+                        <h2 className='found'>{people?.length} people found for your search of "{searchQuery}"!</h2>
                     }
+                    <div className='people'>
+                        {
+                            people?.map((person, i) => (
+                                <ProfileCard key={i} person={person}/>
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+
+            :
+                <div className='content'>
+                    <h2 className='nofound'>No related people found.</h2>
+                </div>
+
+            }
             </Helmet>
     
         )

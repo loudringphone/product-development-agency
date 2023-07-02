@@ -5,6 +5,7 @@
 }
 .newsletter p {
     text-align: left;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 .sub__heading {
@@ -16,6 +17,7 @@
 .sub__form form {
     display: inline-flex;
     width: 100%;
+    align-items: center;
     position: relative;
 }
 
@@ -50,5 +52,19 @@ div.form__email {
     color: white;
 }
 .sub__error {
+    margin-top: 0.3rem;
+    font-size: smaller;
     color: red;
+}
+.sub__form button {
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+    width: 85px;
+    position: absolute;
+    right: 0px;
+}
+.sub__form button:active {
+    font-size: medium;
 }
