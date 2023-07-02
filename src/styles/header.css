@@ -1,5 +1,5 @@
 a.logo {
-    /* margin-left: auto; */
+    display: flex;
 }
 
 body.scroll-locked {
@@ -9,6 +9,8 @@ body.scroll-locked {
 
 .header .logo img {
     max-width: 50px;
+    max-height: 50px;
+    align-self: center;
     display: inline-block;
 }
 
@@ -99,8 +101,9 @@ ul#nav {
 div.mobile_menu {
     display: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin: auto;
     align-self: center;
+    justify-content: center;
 }
 
 div.mobile_menu span {
@@ -194,8 +197,13 @@ header a {
 }
 
 @media (max-width: 1020px) {
+    div.nav_wrapper {
+        width: 100%;
+    }
     a.logo {
         margin-left: auto;
+        width: 80%;
+        place-content: center
     }
     .account-links {
         align-items: center;
@@ -242,6 +250,9 @@ header a {
 }
 
 @media (max-width: 330px) {
+    a.logo img {
+        display: none !important;
+    }
     .account-links {
         align-items: flex-end;
     }

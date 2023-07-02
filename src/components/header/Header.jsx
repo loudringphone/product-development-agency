@@ -38,7 +38,7 @@ const Header = () => {
         function handleResize() {
         if (window.innerWidth <= 1020) {
             setIsMobile(true)
-            setMobileMenuDisplay("inline");
+            setMobileMenuDisplay("flex");
             setHeaderStyle({height: '100px'});
             setIsNavVisible(false);
             
@@ -91,7 +91,7 @@ const Header = () => {
 
     const handleClose = () => {
         document.body.classList.remove('scroll-locked');
-        setMobileNavStyle({display: 'inline', width: '0px'});
+        setMobileNavStyle({display: 'flex', width: '0px'});
         setNavigationStyle({display: 'none'})
         setTimeout(() => {
             setMobileNavStyle({display: 'none', width: '0px'});
@@ -99,13 +99,13 @@ const Header = () => {
     };
     const handleOpen = () => {
         document.body.classList.add('scroll-locked');
-        setMobileNavStyle({display: 'inline', width: '0px'});
+        setMobileNavStyle({display: 'flex', width: '0px'});
 
         setTimeout(() => {
             if (window.innerWidth <= 325) {
-                setMobileNavStyle({display: 'inline', width: '225px', top: window.scrollY});
+                setMobileNavStyle({display: 'flex', width: '225px', top: window.scrollY});
             } else {
-                setMobileNavStyle({display: 'inline', width: '325px', top: window.scrollY});
+                setMobileNavStyle({display: 'flex', width: '325px', top: window.scrollY});
             }
         }, 1);
         setTimeout(() => {
