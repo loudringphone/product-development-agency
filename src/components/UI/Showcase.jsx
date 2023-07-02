@@ -23,7 +23,7 @@ const Showcase = (props) => {
         setSlides(1);
       } else if (window.innerWidth <= 800) {
         setSlides(2);
-      } else if (window.innerWidth <= 1100) {
+      } else if (window.innerWidth <= 1400) {
         setSlides(3);
       } else {
         setSlides(4);
@@ -36,7 +36,7 @@ const Showcase = (props) => {
       setSlides(1);
     } else if (windowWidth <= 800) {
       setSlides(2);
-    } else if (windowWidth <= 1100) {
+    } else if (windowWidth <= 1400) {
       setSlides(3);
     } else {
       setSlides(4);

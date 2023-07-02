@@ -43,11 +43,12 @@ h1, h2, h3, h4, p {
   padding-top: 50px;
   padding-bottom: 50px;
   min-height: 70vh;
-  width: 80%;
+  margin: auto;
+  width: 90vw;
   place-self: center;
 }
 @media (max-width: 1000px) {
   .content {
-    width: 90%; 
+    /* width: 90%;  */
   }
 }
