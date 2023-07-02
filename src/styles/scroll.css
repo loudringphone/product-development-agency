@@ -34,49 +34,49 @@
 }
 
 @keyframes spin_words {
-    10% {
+    8% {
         transform: translateY(-112%);
     }
-    15% {
+    12% {
         transform: translateY(-100%);
     }
-    25% {
+    20% {
         transform: translateY(-212%);
     }
-    30% {
+    24% {
         transform: translateY(-200%);
     }
-    40% {
+    32% {
         transform: translateY(-312%);
     }
-    45% {
+    36% {
         transform: translateY(-300%);
     }
-    55% {
+    44% {
         transform: translateY(-412%);
     }
-    60% {
+    48% {
         transform: translateY(-400%);
     }
-    67% {
+    56% {
         transform: translateY(-512%);
     }
-    70% {
+    60% {
         transform: translateY(-500%);
     }
-    77% {
+    68% {
         transform: translateY(-612%);
     }
-    80% {
+    72% {
         transform: translateY(-600%);
     }
-    87% {
+    80% {
         transform: translateY(-712%);
     }
-    90% {
+    84% {
         transform: translateY(-700%);
     }
-    97% {
+    92% {
         transform: translateY(-812%);
     }
     100% {

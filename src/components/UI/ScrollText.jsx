@@ -19,8 +19,8 @@ const ScrollText = () => {
         <div className="sentence">
             <p className='heroPara'>We create </p>
             <div className="words">
-                { wordArray.map((word) => {
-                    return <span>{ word }</span>
+                { wordArray.map((word, index) => {
+                    return <span key={index}>{ word }</span>
                 })}
             </div>
             <p className='heroPara'> for people with purpose.</p>
