@@ -36,16 +36,20 @@ const Home = () => {
 
 
     return (
-        <div className='content'>
             <Helmet title={"Home"}>
-                <ScrollText />
-                <Purpose />
-                <Approach />
+                <div className='content'>
+                    <ScrollText />
+                    <Purpose />
+                    <Approach />
+                </div>
                 <Works />
-                <h1 className='people-title'>Meet the people behind the projects</h1>
-                <Showcase rtl={false} items={people}/>
+                <div className='content'>
+                    <h1 className='people-title'>Meet the people behind the projects</h1>
+                    <Showcase rtl={false} items={people}/>
+                </div>
+
+
             </Helmet>
-        </div>
     )
 
 }

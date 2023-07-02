@@ -1,6 +1,10 @@
 a.logo {
     display: flex;
 }
+a.logo h3 {
+    line-height: 1;
+}
+
 
 body.scroll-locked {
     overflow: hidden;
@@ -23,7 +27,7 @@ body.scroll-locked {
 
 header.header {
     padding-top: 15px;
-    height: 100px;
+    height: 85px;
     width: 100%;
     position: sticky;
     top: 0;
@@ -223,7 +227,7 @@ header a {
         padding: 0;
     }
     header.header  {
-        height: 85px !important;
+        height: 70px !important;
     }
     .search_box {
         display: none;

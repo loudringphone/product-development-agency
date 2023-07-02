@@ -5,7 +5,7 @@
     width:100%;
     max-width: 960px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     
 }
 
@@ -32,7 +32,7 @@
 .approach-card {
     display: inline-block;
     width: 40%;
-    min-height: 400px;
+    min-height: 350px;
     padding: 1em;
     vertical-align: middle;
 }

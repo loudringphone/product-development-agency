@@ -10,6 +10,10 @@
     /* border: 1px solid rgba(125,125,125,.16);
     box-shadow: 0 1px 4px #7d7d7d1c; */
 }
+h1.people-title {
+    margin-bottom: 75px;
+}
+
 .box img {
     flex-shrink: 0;
     width: 100%;

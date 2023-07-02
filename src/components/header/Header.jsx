@@ -30,26 +30,21 @@ const Header = () => {
    
     const [headerStyle, setHeaderStyle] = useState(null);
     const [isNavVisible, setIsNavVisible] = useState(true);
-    const [prevScrollY, setPrevScrollY] = useState(0);
-    const [isMobile, setIsMobile] = useState(false);
     const [mobileMenuDisplay, setMobileMenuDisplay] = useState("none");
 
     useEffect(() => {
         function handleResize() {
         if (window.innerWidth <= 1020) {
-            setIsMobile(true)
             setMobileMenuDisplay("flex");
-            setHeaderStyle({height: '100px'});
+            setHeaderStyle({height: '85px'});
             setIsNavVisible(false);
             
         } else {
-            setIsMobile(false)
             setMobileMenuDisplay("none");
             if (window.scrollY <= 150) {
-                setHeaderStyle({height: '105px'});
+                setHeaderStyle({height: '85px'});
                 setIsNavVisible(true);
             } else {
-                setHeaderStyle({height: '80px'});
                 setIsNavVisible(false);
             }
         }
@@ -62,29 +57,7 @@ const Header = () => {
     }, []);
 
 
-    useEffect(() => {
-        
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            
-            if (window.innerWidth > 1020) {
-                setIsNavVisible(headerStyle?.height === '105px');
-                if(currentScrollY <= 150) {
-                    setHeaderStyle({height: '105px'})
-                }
-                else if (currentScrollY >= 175)
-                {setHeaderStyle({height: '80px'})}
-                setPrevScrollY(currentScrollY);
-            }
-        };
-        
-        window.addEventListener('scroll', handleScroll);
-        
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [prevScrollY]);
+    
 
     const [mobileNavStyle, setMobileNavStyle] = useState({display: 'none', width: '0px'});
     const [navigationStyle, setNavigationStyle] = useState({display: 'none'});

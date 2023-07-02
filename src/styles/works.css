@@ -10,6 +10,7 @@
 
 .works-container {
     max-width: 900px;
+    width: 100vw;
 }
 
 .works-title {
