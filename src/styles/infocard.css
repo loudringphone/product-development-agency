@@ -87,8 +87,8 @@
 .smallinfo__card:nth-child(even) > .smallinfo__right {
     left: 50%;
 }
-.smallinfo__right h2, .smallinfo__right p {
-    background-color: violet;
+.smallinfo__right h2, .smallinfo__right h3, .smallinfo__right p {
+    background-color: rgba(245, 245, 245, 0.8);
     color: black; 
     max-width: fit-content;
     padding: 3px 5px 3px 5px;
@@ -151,7 +151,7 @@
         font-size: large;
         margin-left: 25px;
         margin-top: 20px;
-        background-color: aqua;
+        background-color: whitesmoke;
     }
 
    

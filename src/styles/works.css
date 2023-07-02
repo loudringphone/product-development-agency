@@ -1,13 +1,16 @@
-.works-container {
+.works-background {
     min-height: 200px;
     background-color: rgb(26, 26, 26);
     color: rgb(238, 238, 238);
     font-family: 'Quicksand', sans-serif;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 5em;
-    padding-top: 1em;
+    padding: 1em 0;
 }
 
+.works-container {
+    max-width: 900px;
+}
 
 .works-title {
     margin: 4em auto;

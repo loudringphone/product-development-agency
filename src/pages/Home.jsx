@@ -42,6 +42,7 @@ const Home = () => {
                 <Purpose />
                 <Approach />
                 <Works />
+                <h1 className='people-title'>Meet the people behind the projects</h1>
                 <Showcase rtl={false} items={people}/>
             </Helmet>
         </div>
