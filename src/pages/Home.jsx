@@ -41,7 +41,7 @@ const Home = () => {
                 <ScrollText />
                 <Purpose />
                 <Approach />
-                <Works />
+                {/* <Works /> */}
                 <Showcase rtl={false} items={people}/>
             </Helmet>
         </div>
