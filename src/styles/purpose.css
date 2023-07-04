@@ -2,7 +2,6 @@
 
 .purpose-container {
     min-height: 200px;
-    /* background-color: rgb(26, 26, 26); */
     color: rgb(26, 26, 26);
     width: 100%;
     margin-bottom: 5em;
@@ -10,10 +9,13 @@
 
 .purpose-card {
     display: inline-block;
-    max-width: 25%;
     text-align:center;
     vertical-align: middle;
     margin:1em;
+}
+
+.purpose-cards .purpose-card {
+    max-width: 25%;
 }
 
 .purpose-card img {
@@ -24,4 +26,28 @@
 
 .purpose-card p {
     text-align: center;
+}
+.purpose-slides {
+    display: none;
+}
+
+.purpose-slides .purpose-card img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.purpose-slides .purpose-card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 950px) {
+    .purpose-cards {
+        display: none;
+    }
+    .purpose-slides {
+        display: contents;
+    }
+
+
 }

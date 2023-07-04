@@ -7,7 +7,7 @@ const ScrollText = () => {
         'websites',
         'experiences',
         'apps',
-        'methodologies',
+        'methods',
         'systems',
         'products', 
         'services', 

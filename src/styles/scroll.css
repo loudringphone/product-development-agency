@@ -1,7 +1,10 @@
 .sentence {
     max-width: 700px;
     text-align: left;
-    margin: 0 0 50px 2em;
+    margin: 0 !important;
+    margin-bottom: 50px !important;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .heroPara, .words {

@@ -48,6 +48,7 @@ const Showcase = (props) => {
     arrows: false,
     infinite: true,
     autoplay: true,
+    pauseOnHover: true,
     autoplaySpeed: 1000,
     speed: 7500,
     slidesToShow: slides,

@@ -1,6 +1,7 @@
 .team__content {
     display: flex;
     justify-content: space-between;
+    width: 95%;
 }
 .team__content p {
     text-align: left;

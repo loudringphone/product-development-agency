@@ -72,11 +72,15 @@
     width: 350px;
 }
 .smallinfo__right h2 {
-    margin-bottom: 30px;
+    margin-bottom: 0.25rem;
 }
 
 .smallinfo__card:nth-child(even) {
     flex-direction: row;
+}
+
+.works-container img {
+    pointer-events: none;
 }
 
 
@@ -88,6 +92,25 @@
 @media (max-width: 800px) {
     .smallinfo__card {
         width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .smallinfo__right {
+        width: 175px;
+    }
+    .smallinfo__right p {
+        margin-top: 1rem;
+        margin-left: 0px !important ;
+        width: 100%;
+        float: left
+
+    }
+    
+    .smallinfo__card:nth-child(even) .smallinfo__right {
+        margin-right: 2%;
+    }
+    .smallinfo__card:nth-child(odd) .smallinfo__right {
+        margin-left: 2%;
     }
     .biginfo__card {
         width: 100%;
@@ -104,6 +127,7 @@
     }
     .smallinfo__right p {
         max-width: 25vw;
+
     }
 }
 @media (max-width: 700px) {
@@ -118,6 +142,13 @@
     .smallinfo__card img {
         width: 75vw;
     }
+    .smallinfo__right {
+        margin-top: 1rem !important;
+        width: 70vw;
+    }
+    .smallinfo__right h2 {
+        margin-bottom: 0.5rem !important;
+    }
     .smallinfo__card:nth-child(even) {
         flex-direction: column;
         height: fit-content;
@@ -125,15 +156,19 @@
         margin-left: 0;
         margin-right: auto;
     }
+    .smallinfo__card:nth-child(even) .smallinfo__right {
+        margin-left: 2%;
+    }
     .smallinfo__right {
         margin-top: 0px;
     }
     .smallinfo__right h2{
         margin-bottom: 15px;
     }
+    
     .smallinfo__right p {
         max-width: 75vw;
-        width: 75vw;
+        /* width: 75vw; */
 
     }
     .person__details {
