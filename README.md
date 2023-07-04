@@ -1,5 +1,5 @@
 # Spark Studio
-Thie product development agency app was built using Firebase, ReactJS, Rowy and Netlify for the General Assembly Australia's Collab-athon over the weekend from 30 Jun 2023 to 2 July 2023.
+Thie product development agency app was built using Firebase, ReactJS, Rowy and Netlify for the General Assembly Australia's Collab-athon over the weekend from 30 Jun to 2 July 2023.
 
 Site: https://sparkstudio.netlify.app/
 
