@@ -34,20 +34,15 @@ const Header = () => {
 
     useEffect(() => {
         function handleResize() {
-        if (window.innerWidth <= 1020) {
-            setMobileMenuDisplay("flex");
-            setHeaderStyle({height: '85px'});
-            setIsNavVisible(false);
-            
-        } else {
-            setMobileMenuDisplay("none");
-            if (window.scrollY <= 150) {
+            if (window.innerWidth <= 1020) {
+                setMobileMenuDisplay("flex");
                 setHeaderStyle({height: '85px'});
-                setIsNavVisible(true);
-            } else {
                 setIsNavVisible(false);
+            } else {
+                setMobileMenuDisplay("none");
+                    setHeaderStyle({height: '85px'});
+                    setIsNavVisible(true);
             }
-        }
         }
 
         window.addEventListener('resize', handleResize);

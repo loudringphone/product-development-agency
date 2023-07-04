@@ -15,7 +15,7 @@
 .biginfo__card img {
     width: 100%;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .biginfo__left {
     position: absolute;
@@ -47,77 +47,47 @@
     width: 80%;
 }
 .smallinfo__card {
-    height: 350px;
-    width: 350px;
+    height: auto;
+    width: 70%;
     justify-content: center;
     display: flex;
     place-content: center;
+    flex-direction: row-reverse;
     position: relative;
+    gap: 25px;
     margin-bottom: 75px;
 }
 
 .smallinfo__card img {
     width: 450px;
     max-height: 100%;
-    opacity: 0.7;
-}
-.smallinfo__left {
-    position: absolute;
-    left: 50%;
-    height: 100%;
+    opacity: 0.9;
 }
 .smallinfo__right {
-    width: 100%;
-    position: absolute;
-    left: -50%;
-    padding: 10px;
-    text-align: left;
+    margin-top: 30px;
 }
 .smallinfo__right p {
-    margin: 0;
-    font-size: large;
-    margin-left: 25%;
-    margin-top: 15%;
+    margin-top: 30px;
+    width: 350px;
 }
+.smallinfo__right h2 {
+    margin-bottom: 30px;
+}
+
 .smallinfo__card:nth-child(even) {
-    flex-direction: row-reverse;
-}
-.smallinfo__card:nth-child(even) > .smallinfo__left {
-    left: -50%;
-}
-.smallinfo__card:nth-child(even) > .smallinfo__right {
-    left: 50%;
-}
-.smallinfo__right h2, .smallinfo__right h3, .smallinfo__right p {
-    background-color: violet;
-    color: black; 
-    max-width: fit-content;
-    padding: 3px 5px 3px 5px;
+    flex-direction: row;
 }
 
-@media (max-width: 1050px) {
-    
-    .smallinfo__left {
-        left: 20%;
-    }
-    .smallinfo__right {
-        left: -30%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__left {
-        left: -20%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__right {
-        left: 30%;
-    }
 
-
-}
-@media (max-width: 850px) {
-.smallinfo__card img {
-    width: 400px;
+@media (max-width: 1000px) {
+.smallinfo__right p {
+    max-width: 30vw;
 }
 }
 @media (max-width: 800px) {
+    .smallinfo__card {
+        width: 100%;
+    }
     .biginfo__card {
         width: 100%;
     }
@@ -131,8 +101,40 @@
         padding: 10px;
         text-align: left;
     }
+    .smallinfo__right p {
+        max-width: 25vw;
+    }
 }
 @media (max-width: 700px) {
+    .smallinfo__card {
+        flex-direction: column;
+        text-align: right;
+        height: fit-content;
+        width: min-content;
+        margin-left: auto;
+        margin-bottom: 100px;
+    }
+    .smallinfo__card img {
+        width: 75vw;
+    }
+    .smallinfo__card:nth-child(even) {
+        flex-direction: column;
+        height: fit-content;
+        text-align: left;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .smallinfo__right {
+        margin-top: 0px;
+    }
+    .smallinfo__right h2{
+        margin-bottom: 15px;
+    }
+    .smallinfo__right p {
+        max-width: 75vw;
+        width: 75vw;
+
+    }
     .person__details {
         width: 90%;
     }
@@ -152,55 +154,10 @@
         font-size: large;
         margin-left: 25px;
         margin-top: 20px;
-        background-color: whitesmoke;
     }
 
    
-    .smallinfo__left {
-        left: 10%;
-    }
-    .smallinfo__right {
-        left: -10%;
-        bottom: 5%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__left {
-        left: -10%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__right {
-        left: 10%;
-    }
-}
-@media (max-width: 600px) {
-    .smallinfo__left {
-        left: 0%;
-    }
-    .smallinfo__right {
-        left: -10%;
-        bottom: 5%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__left {
-        left: 0%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__right {
-        left: 10%;
-    }
-}
-@media (max-width: 530px) {
-    .smallinfo__card {
-        width: 300px;
-    }
-    .smallinfo__card img {
-        width: 300px;
-    }
-    .smallinfo__right {
-        left: 0%;
-        bottom: 5%;
-    }
-    .smallinfo__card:nth-child(even) > .smallinfo__right {
-        left: 0%;
-    }
 }
 
-.works-container .smallinfo__right h2, .works-container .smallinfo__right h3, .works-container .smallinfo__right p {
-    background-color: rgba(245, 245, 245, 0.8);
-}
+
+

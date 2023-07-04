@@ -13,6 +13,7 @@ const SmallInfoCard = (props) => {
             </Link>
             </div>
             <div className="smallinfo__right">
+                <div className="text">
                 <h2>{info.name}</h2>
                 {info.type?
                     <h3>{info.type}</h3>
@@ -21,6 +22,7 @@ const SmallInfoCard = (props) => {
                  }
                 
                 <p>{info.description}</p>
+                </div>
             </div>
         </div>
     )
