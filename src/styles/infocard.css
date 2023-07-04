@@ -137,7 +137,7 @@
         height: fit-content;
         width: min-content;
         margin-left: auto;
-        margin-bottom: 100px;
+        /* margin-bottom: 75px; */
     }
     .smallinfo__card img {
         width: 75vw;
