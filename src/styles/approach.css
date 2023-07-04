@@ -20,17 +20,17 @@
 .approach-content {
     width: 60%;
     margin-left:auto;
-    margin-right: 1em;
+    margin-right: auto;
 }
 
 .approach-cards {
-    align-items: center;
-    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .approach-card {
     display: inline-block;
-    width: 40%;
     min-height: 350px;
     padding: 1em;
     vertical-align: middle;
@@ -50,3 +50,22 @@
 .approach-card h3 {
     margin-bottom: 10px;
 }
+
+@media (max-width: 450px) {
+.approach-card img {
+    max-height: 15vh;;
+}
+}
+@media (max-width: 400px) {
+    .approach-card img {
+        max-height: 15vh;;
+    }
+    .approach-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .approach-card {
+        padding: 0.5em;
+    }
+    }

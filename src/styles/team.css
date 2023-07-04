@@ -73,4 +73,9 @@
     }
 }
 
-
+/* @media (max-width: 700px) {
+    .team__showcase .box {
+        height: 275px;
+        width: 275px !important;
+    }
+} */

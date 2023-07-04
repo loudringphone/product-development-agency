@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import '../../styles/profilecard.css'
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../../styles/team.css'
 
 const TeamCard = (props) => {

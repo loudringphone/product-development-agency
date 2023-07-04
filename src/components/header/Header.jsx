@@ -32,6 +32,9 @@ const Header = () => {
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [mobileMenuDisplay, setMobileMenuDisplay] = useState("none");
 
+
+
+
     useEffect(() => {
         function handleResize() {
             if (window.innerWidth <= 1020) {
