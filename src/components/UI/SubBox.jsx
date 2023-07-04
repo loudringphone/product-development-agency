@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../../firebase_setup/firebase"
 import { setDoc, doc } from "firebase/firestore"
-import { toast } from "react-toastify"
 import { motion } from "framer-motion";
 
 import '../../styles/subbox.css'
@@ -27,7 +26,6 @@ const SubBox = (props) => {
             setTimeout(() => {
                 setLoadingDisplay({display: "none"})
                 setSubscribedDisplay({display: "flex", zIndex:99})
-                toast.success("Welcome aboard!", {autoClose: 1500})
             }, 1000);
         } catch (error) {
           console.log(error.code)
