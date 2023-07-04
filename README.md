@@ -3,7 +3,7 @@ Thie product development agency app was built using Firebase, ReactJS, Rowy and 
 
 Site: https://sparkstudio.netlify.app/
 
-Fima: https://www.figma.com/file/WbKFtwCOSSVoFt9UvamIAS/Untitled?type=design&node-id=0-1&mode=design
+Figma: https://www.figma.com/file/WbKFtwCOSSVoFt9UvamIAS/Untitled?type=design&node-id=0-1&mode=design
 
 Winston's LinkedIn: https://www.linkedin.com/in/winston-lau/  
 Suzie's LinkedIn:

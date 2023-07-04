@@ -46,7 +46,7 @@ const Home = () => {
                 <div className="team__content">
                         <div className="team__left">
                     <h1 className='team-title'>Meet our Team</h1>
-                    <p>Together, we defined our brand, designed and built the site during a 48 hour collabathon with a frontend and backend, using ReactJS, Firebase, Rowy and Fima.</p>
+                    <p>Together, we defined our brand, designed and built the site during a 48 hour collabathon with a frontend and backend, using ReactJS, Firebase, Rowy and Figma.</p>
                     </div>
                     <div className="team__right">
                         <TeamCard people={people}/>
