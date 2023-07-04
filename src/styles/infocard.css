@@ -1,5 +1,6 @@
 .person__details {
-    width: 550px
+    width: 550px;
+    margin-bottom: 150px;
 }
 .biginfo__card {
     height: 550px;

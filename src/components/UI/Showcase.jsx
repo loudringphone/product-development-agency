@@ -61,26 +61,50 @@ const Showcase = (props) => {
   return (
     <div id="showcase">
       <Slider {...settings}>
-        {
+      {
           items && items.map((item, i) => (
-            <div  key={i} className="box">
-              <Link to={pathname === '/' || pathname === '/home' ? `people/${item.name.replace(' ','').toLowerCase()}` : item.url}>
-                <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
-</Link>
-              <h4>{item.name}</h4>
-            </div>
-            ))
-        }
-        {
-          items && items.map((item, i) => (
+            <Link to={pathname === '/' || pathname === '/home' ? `people/${item.name.replace(' ','').toLowerCase()}` : item.url}>
+            <div>
             <div key={i} className="box">
-              <Link to={pathname === '/' || pathname === '/home' ? `people/${item.name.replace(' ','').toLowerCase()}` : item.url}>
+              
                 <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
-</Link>
-              <h4>{item.name}</h4>
+
             </div>
+            {
+              item.title ?
+              <div className="profile">
+            <p style={{ textDecoration: 'underline' }}>{item.name}</p>
+            <p>{item.title}</p>
+              </div>
+            :
+            <></>
+            }
+            </div>
+            </Link>
             ))
-        }
+      }
+      {
+          items && items.map((item, i) => (
+            <Link to={pathname === '/' || pathname === '/home' ? `people/${item.name.replace(' ','').toLowerCase()}` : item.url}>
+            <div>
+            <div key={i} className="box">
+              
+                <img src={item.image && item.image[0]?.downloadURL} alt={item.name} />
+
+            </div>
+            {
+              item.title ?
+              <div className="profile">
+            <p style={{ textDecoration: 'underline' }}>{item.name}</p>
+            <p>{item.title}</p>
+              </div>
+            :
+            <></>
+            }
+            </div>
+            </Link>
+            ))
+      }
         
       
       </Slider>

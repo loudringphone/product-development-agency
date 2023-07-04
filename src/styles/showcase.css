@@ -6,9 +6,6 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    
-    /* border: 1px solid rgba(125,125,125,.16);
-    box-shadow: 0 1px 4px #7d7d7d1c; */
 }
 h1.people-title {
     margin-bottom: 75px;
@@ -27,4 +24,11 @@ h1.people-title {
 #showcase {
     margin-top: 25px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+    .box {
+        height: 250px;
+        width: 250px !important;
+    }
 }
