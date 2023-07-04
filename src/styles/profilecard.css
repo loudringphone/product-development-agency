@@ -1,7 +1,7 @@
 .profile__card a {
     display: flex;
     place-content: flex-start;
-    gap: 20px;
+    gap: 2.5rem;
     width: 450px;
 }
 
@@ -12,6 +12,7 @@
 .profile__card img {
     height: 200px;
     width: 200px;
+    border-radius: 50%;
 }
 
 .content a {
@@ -45,5 +46,10 @@
     .profile__card a {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
+    /* .profile__card img {
+        height: 220px;
+        width: 220px;
+    } */
 }
