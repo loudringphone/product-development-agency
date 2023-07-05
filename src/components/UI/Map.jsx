@@ -16,9 +16,26 @@ const Map = () => {
     }
   }, [mapLocation]);
 
+  const [mapWidth, setMapWidth] = useState('350px');
+
+  useEffect(() => {
+    function handleResize() {
+      const innerWidth = window.innerWidth
+        if (innerWidth <= 350) {
+          setMapWidth('90vw')
+
+        } else {
+          setMapWidth('350px')
+        }
+    }
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+}, []);
+
   const containerStyle = {
-    width: '350px',
-    height: '350px',
+    width: mapWidth,
+    height: mapWidth,
     marginTop: '10px',
     marginBottom: '10px'
   };

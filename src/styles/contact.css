@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
 }
 .headquarter-location h3 {
     margin-bottom: 0.3rem;
@@ -27,4 +27,18 @@
     width: 350px;
     gap: 15px;
 }
+}
+@media (max-width: 350px) {
+    .headquarter-location {
+        width: 92.5vw !important;
+    }
+    .map {
+        width: 90vw;
+        height: 90vw;
+    }
+    .map > div {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    
+    }
 }

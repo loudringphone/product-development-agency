@@ -21,7 +21,7 @@ const Contact = () => {
                         <li>Sydney, NSW</li>
                         <li>2000</li>
                         <li>Phone: 02 9855 5555</li>
-                        <li>Email: letsconnect@sparkstudio.com</li>
+                        <li>Email: <a href="mailto:info@sparkstudio.com">info@sparkstudio.com</a></li>
                         </ul>
                     </div>
                 </div>
