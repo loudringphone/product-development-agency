@@ -15,7 +15,7 @@ const Works = () => {
                 .map((doc) => ({ ...doc.data(), id: doc.id }))
         setProjects(newData);})
     }
-    console.log(projects)
+    // console.log(projects)
     useEffect(()=>{
         fetchProjects();
     }, [])

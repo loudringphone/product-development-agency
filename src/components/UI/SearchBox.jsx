@@ -32,7 +32,7 @@ const SearchBox = ({onClick}) => {
   };
 
   const location = useLocation()
-  console.log(location.search)
+  // console.log(location.search)
   useEffect(()=>{
     if (!location.search) {
       setSearchTerm('');
