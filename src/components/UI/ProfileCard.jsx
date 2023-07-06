@@ -13,6 +13,7 @@ const ProfileCard = (props) => {
             </div>
             <div className="profile_right">
                 <h2>{person.name}</h2>
+                <h3>{person.title}</h3>
                 <p>{person.description}</p>
             </div>
         </Link>

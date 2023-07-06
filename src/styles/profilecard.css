@@ -8,6 +8,9 @@
 .profile__card  h2 {
     margin-bottom: 0.5rem;
 }
+.profile__card  h3 {
+    display: none;
+}
 
 .profile__card img {
     height: 200px;
@@ -38,11 +41,27 @@
     }
 }
 @media (max-width: 600px) {
+
+    .profile__card  h2 {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .profile__card  h3 {
+        display: block;
+    }
     .profile__card p {
         display: none;
     }
 }
 @media (max-width: 450px) {
+    .profile__card {
+        margin-bottom: 1rem;
+    }
+    .profile__card  h2 {
+        margin-top: -0.5rem;
+        margin-bottom: 0.25rem;
+
+    }
     .profile__card a {
         flex-direction: column;
         align-items: center;
